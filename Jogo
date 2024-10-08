@@ -1,0 +1,11 @@
+function escolhaCaminho(caminho) {
+    // Esconde todas as etapas
+    const steps = document.querySelectorAll('.step');
+    steps.forEach(step => step.style.display = 'none');
+
+    // Mostra a etapa correspondente ao caminho escolhido
+    const selectedStep = document.getElementById(caminho);
+    if (selectedStep) {
+        selectedStep.style.display = 'block';
+    }
+}
